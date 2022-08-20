@@ -27,6 +27,7 @@
     </tr>
     <core:forEach items="${customersList}" var="customerList">
         <tr>
+            <td>${customerList.id}</td>
             <td><a href="/customer?action=view&id=${customerList.id}">${customerList.name}</a></td>
             <td>${customerList.email}</td>
             <td>${customerList.address}</td>
